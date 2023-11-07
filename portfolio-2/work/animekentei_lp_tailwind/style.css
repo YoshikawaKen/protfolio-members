@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* メディアクエリ: 640px以下 */
+@media (max-width: 640px) {
+	.logo__big {
+		width: 70%;
+		/* サイズを半分に設定 */
+		/* 他のスタイリングをここに追加できます */
+
+	}
+
+	.firstview__text {
+		top: 14%;
+	}
+}
+
+
+
+.firstview__text {
+	position: absolute;
+	top: 15.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
+
+.playButton::after{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	transform: translate(20px, -2px);
+	background-image: url(./img/arrow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.playButton:hover:after{
+	content: '';
+	display: inline-block;
+	background-image: url(./img/arrow__white.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.moreView::after{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	transform: translate(20px, -2px);
+	background-image: url(./img/arrow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.moreView:hover:after{
+	content: '';
+	display: inline-block;
+	background-image: url(./img/arrow__white.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.operation::after{
+	position: absolute;
+	content: '';
+	display: inline-block;
+	width: 11vw;
+	height: 11vw;
+	transform: translate(20px, -2px);
+	background-image: url(./img/circle5.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	z-index: 0;
+}
+
+@media (max-width: 475px){
+	.firstview__text{
+		font-size: 16px;
+		top: 13.5%;
+	}
+}
